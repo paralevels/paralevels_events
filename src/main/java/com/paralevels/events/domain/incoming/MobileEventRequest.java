@@ -10,7 +10,7 @@ public record MobileEventRequest(
     @NotBlank String app,
     @NotBlank String user,
     @NotBlank String device,
-    String request_id,
-    String client_timestamp,
+    String requestId,
+    String clientTimestamp,
     Map<String, Object> prop
 ) {}
