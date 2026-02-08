@@ -24,17 +24,16 @@ public class EventIngestController {
       @RequestHeader(value = "X-Event-Type", required = false) String eventType,
       @RequestHeader(value = "X-App-Version", required = false) String appVersion
   ) {
-    String resolvedType = ((eventType != null && !eventType.isBlank()) ? eventType : req.type());
-    resolvedType = (resolvedType == null) ? "" : resolvedType.trim().toLowerCase();
+    String type = org.springframework.util.StringUtils.hasText(eventType) ? eventType : req.type();
 
-    if (resolvedType.isBlank()) {
+    if (!org.springframework.util.StringUtils.hasText(type)) {
       return ResponseEntity.badRequest().body(Map.of(
           "error", "missing_event_type",
           "message", "Provide event type in X-Event-Type header or in JSON body as 'type'."
       ));
     }
 
-    registry.get(resolvedType).handle(req, appVersion);
+    registry.get(type.trim().toLowerCase()).handle(req, appVersion);
     return ResponseEntity.accepted().build();
   }
 }
