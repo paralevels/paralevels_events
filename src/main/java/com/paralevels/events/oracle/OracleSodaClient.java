@@ -8,7 +8,7 @@ import org.springframework.web.client.RestClient;
 @Component
 public class OracleSodaClient {
 
-  private final RestClient base = RestClient.builder().build();
+  private final RestClient base;
 
   public void insertEvent(String url, String user, String pass, Object body) {
     base.post()
