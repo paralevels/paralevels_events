@@ -1,6 +1,6 @@
 package com.paralevels.events.handlers.leapp;
 
-public record EventMeta(String name, String description, int weight) {}
+record EventMeta(String name, String description, int weight) {}
 
 public final class LeAppEventCatalog {
   public static EventMeta metaFor(int id) {
