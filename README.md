@@ -163,7 +163,7 @@ No controller changes are required.
 ## Configuration
 
 ### application.yml (example)
-
+```yaml
 server:
   address: 127.0.0.1
   port: 8071
@@ -175,6 +175,7 @@ oracle:
         url: https://.../soda/latest/le_app_events
         user: ORDS_USER
         pass: ORDS_PASSWORD
+```
 
 ---
 
