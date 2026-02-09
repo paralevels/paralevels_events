@@ -30,8 +30,8 @@ public class LeAppEventHandler implements EventHandler {
     var meta = LeAppEventCatalog.metaFor(req.id());
     var now = Instant.now().toString();
 
-    String eventTimestamp = (req.client_timestamp() != null && !req.client_timestamp().isBlank())
-        ? req.client_timestamp()
+    String eventTimestamp = (req.clientTimestamp() != null && !req.clientTimestamp().isBlank())
+        ? req.clientTimestamp()
         : now;
 
     var enriched = new java.util.LinkedHashMap<String, Object>();
@@ -47,8 +47,8 @@ public class LeAppEventHandler implements EventHandler {
     enriched.put("app", req.app());
     enriched.put("user", req.user());
     enriched.put("device", req.device());
-    if (req.request_id() != null && !req.request_id().isBlank()) {
-      enriched.put("request_id", req.request_id());
+    if (req.requestId() != null && !req.requestId().isBlank()) {
+      enriched.put("request_id", req.requestId());
     }
     enriched.put("event_properties", (req.prop() != null ? req.prop() : Map.of()));
 
