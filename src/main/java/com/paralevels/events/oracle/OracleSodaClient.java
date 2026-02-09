@@ -10,6 +10,10 @@ public class OracleSodaClient {
 
   private final RestClient base;
 
+  public OracleSodaClient(RestClient restClient) {
+    this.base = restClient;
+  }
+
   public void insertEvent(String url, String user, String pass, Object body) {
     base.post()
         .uri(url)
