@@ -67,8 +67,10 @@ This is the **base event format** sent by mobile applications.
     "eid": 1000001
   }
 }
+```
 
 ### Full example (recommended)
+```json
 {
   "type": "le_app",
   "id": 1,
@@ -83,6 +85,7 @@ This is the **base event format** sent by mobile applications.
     "eid": 1000001
   }
 }
+```
 
 Field Description
 type Event family identifier (e.g. le_app)
@@ -105,8 +108,8 @@ Notes:
 
 The backend enriches incoming events before persisting them to Oracle SODA.
 
-Example enriched document
-
+###Example enriched document
+```json
 {
   "schema_version": 1,
   "type": "le_app",
@@ -131,6 +134,7 @@ Example enriched document
     "eid": 1000001
   }
 }
+```
 
 ## Enrichment responsibilities
 
