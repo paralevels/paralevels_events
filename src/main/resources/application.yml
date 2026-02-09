@@ -1,5 +1,8 @@
 server:
   port: 8071
+  error:
+    include-message: always
+    include-binding-errors: always
 
 security:
   api_key: "NOT_USED"
