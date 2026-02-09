@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotNull;
 import java.util.Map;
 
 public record MobileEventRequest(
-    @NotBlank String type,
+    String type, // type must be present either in the header via X-Event-Type or in the JSON body type field
     @NotNull Integer id,
     @NotBlank String app,
     @NotBlank String user,
