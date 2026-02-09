@@ -108,7 +108,7 @@ Notes:
 
 The backend enriches incoming events before persisting them to Oracle SODA.
 
-###Example enriched document
+### Example enriched document
 ```json
 {
   "schema_version": 1,
