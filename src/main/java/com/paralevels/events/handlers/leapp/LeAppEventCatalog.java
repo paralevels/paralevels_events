@@ -14,6 +14,7 @@ public final class LeAppEventCatalog {
       case 22 -> new EventMeta("discovery_package_downloading", "Discovery package downloading", 1);
       case 23 -> new EventMeta("discovery_package_installing", "Discovery package installing", 1);
       case 24 -> new EventMeta("discovery_package_installed", "Discovery package installed", 3);
+      case 1000 -> new EventMeta("healthcheck", "Health check", 1);
       default -> new EventMeta("unknown_event", "Unrecognized event id", 0);
     };
   }
