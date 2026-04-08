@@ -9,6 +9,11 @@ public final class LeAppEventCatalog {
       case 1 -> new EventMeta("encounter_entered", "User entered an encounter", 2);
       case 2 -> new EventMeta("encounter_scene_changed", "Encounter scene changed", 1);
       case 3 -> new EventMeta("encounter_ended", "Encounter ended", 2);
+      case 4 -> new EventMeta("encounter_scene_choice_made", "Encounter scene choice made", 1);
+      case 10 -> new EventMeta("encounter_package_queued", "Encounter package queued", 2);
+      case 11 -> new EventMeta("encounter_package_downloading", "Encounter package downloading", 1);
+      case 12 -> new EventMeta("encounter_package_installing", "Encounter package installing", 1);
+      case 13 -> new EventMeta("encounter_package_installed", "Encounter package installed", 2);
       case 20 -> new EventMeta("discovery_entered", "User entered discovery page", 1);
       case 21 -> new EventMeta("discovery_package_queued", "Discovery package queued", 2);
       case 22 -> new EventMeta("discovery_package_downloading", "Discovery package downloading", 1);
