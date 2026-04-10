@@ -19,6 +19,12 @@ public final class LeAppEventCatalog {
       case 22 -> new EventMeta("discovery_package_downloading", "Discovery package downloading", 1);
       case 23 -> new EventMeta("discovery_package_installing", "Discovery package installing", 1);
       case 24 -> new EventMeta("discovery_package_installed", "Discovery package installed", 3);
+      case 30 -> new EventMeta("payment_entered", "User entered payment page", 1);
+      case 31 -> new EventMeta("payment_package_toggled_true", "Payment package toggled true", 1);
+      case 32 -> new EventMeta("payment_package_toggled_false", "Payment package toggled false", 1);
+      case 33 -> new EventMeta("payment_purchase_button_pressed", "Payment purchase button pressed", 2);
+      case 34 -> new EventMeta("payment_purchase_response_success", "Payment purchase response success", 3);
+      case 35 -> new EventMeta("payment_purchase_response_failure", "Payment purchase response failure", 3);
       case 1000 -> new EventMeta("healthcheck", "Health check", 1);
       default -> new EventMeta("unknown_event", "Unrecognized event id", 0);
     };
