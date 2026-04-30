@@ -25,6 +25,7 @@ public final class LeAppEventCatalog {
       case 33 -> new EventMeta("payment_purchase_button_pressed", "Payment purchase button pressed", 2);
       case 34 -> new EventMeta("payment_purchase_response_success", "Payment purchase response success", 3);
       case 35 -> new EventMeta("payment_purchase_response_failure", "Payment purchase response failure", 3);
+      case 36 -> new EventMeta("payment_restore_button_pressed", "Payment restore button pressed", 3);
       case 1000 -> new EventMeta("healthcheck", "Health check", 1);
       default -> new EventMeta("unknown_event", "Unrecognized event id", 0);
     };
