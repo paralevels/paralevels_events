@@ -8,11 +8,11 @@ security:
 oracle:
   soda:
     types:
-      le_app:
-        url: "https://ga8dd4d8f726db4-paralevelsdb0.adb.us-ashburn-1.oraclecloudapps.com/ords/paralevels_app/soda/latest/le_app_events"
+      ad_app:
+        url: "https://ga8dd4d8f726db4-paralevelsdb0.adb.us-ashburn-1.oraclecloudapps.com/ords/paralevels_app/soda/latest/ad_app_events"
         user: ${ORACLE_SODA_USER}
         pass: ${ORACLE_SODA_PASS}
-      ud_app:
-        url: "https://ga8dd4d8f726db4-paralevelsdb0.adb.us-ashburn-1.oraclecloudapps.com/ords/paralevels_app/soda/latest/ud_app_events"
+      le_app:
+        url: "https://ga8dd4d8f726db4-paralevelsdb0.adb.us-ashburn-1.oraclecloudapps.com/ords/paralevels_app/soda/latest/le_app_events"
         user: ${ORACLE_SODA_USER}
         pass: ${ORACLE_SODA_PASS}
